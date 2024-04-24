@@ -6,10 +6,10 @@ class BottomNav extends StatefulWidget {
   final void Function(int position) onClickItem;
 
   const BottomNav({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onClickItem,
-  }) : super(key: key);
+  });
 
   @override
   BottomNavState createState() => BottomNavState();

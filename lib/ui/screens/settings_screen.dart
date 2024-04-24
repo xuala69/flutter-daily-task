@@ -5,7 +5,7 @@ import 'package:app/ui/components/setting_item.dart';
 import 'package:app/utils/constants.dart';
 
 class SettingsScreen extends StatelessWidget {
-  const SettingsScreen({Key? key}) : super(key: key);
+  const SettingsScreen({super.key});
 
   _saveThemePreferences() async {
     final preferences = await SharedPreferences.getInstance();

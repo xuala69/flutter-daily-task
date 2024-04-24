@@ -5,7 +5,7 @@ import 'package:app/ui/screens/settings_screen.dart';
 import 'package:app/ui/screens/statics_screen.dart';
 
 class AppScreen extends StatefulWidget {
-  const AppScreen({Key? key}) : super(key: key);
+  const AppScreen({super.key});
 
   @override
   AppScreenState createState() => AppScreenState();

@@ -7,7 +7,7 @@ import 'package:app/ui/routing.dart';
 import 'package:app/utils/priority.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  HomeScreen({super.key});
 
   final controller = Get.put(HomeScreenController());
 

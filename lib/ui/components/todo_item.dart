@@ -9,9 +9,9 @@ class TodoItem extends StatelessWidget {
   final TodosWithStatisticResult todoWithStatis;
 
   TodoItem({
-    Key? key,
+    super.key,
     required this.todoWithStatis,
-  }) : super(key: key);
+  });
 
   final controller = Get.find<HomeScreenController>();
 
@@ -58,9 +58,9 @@ class TodoCollapsed extends StatelessWidget {
   final TodosWithStatisticResult todoWithStatis;
 
   TodoCollapsed({
-    Key? key,
+    super.key,
     required this.todoWithStatis,
-  }) : super(key: key);
+  });
 
   final _controller = Get.find<HomeScreenController>();
 
@@ -115,9 +115,9 @@ class TodoExpanded extends StatelessWidget {
   final TodosWithStatisticResult todoWithStatis;
 
   TodoExpanded({
-    Key? key,
+    super.key,
     required this.todoWithStatis,
-  }) : super(key: key);
+  });
 
   final _controller = Get.find<HomeScreenController>();
 

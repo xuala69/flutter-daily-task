@@ -5,11 +5,11 @@ class SettingItem extends StatelessWidget {
   final String? subTitle;
   final void Function()? onClick;
   const SettingItem({
-    Key? key,
+    super.key,
     required this.title,
     this.subTitle,
     this.onClick,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

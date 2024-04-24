@@ -7,7 +7,7 @@ import 'package:app/utils/priority.dart';
 import '../components/indicator.dart';
 
 class StaticsScreen extends StatelessWidget {
-  StaticsScreen({Key? key}) : super(key: key);
+  StaticsScreen({super.key});
 
   final _controller = Get.put(StatisticScreenController());
 

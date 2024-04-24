@@ -6,7 +6,7 @@ import 'package:app/ui/components/priority_item.dart';
 import 'package:app/utils/priority.dart';
 
 class TodoEditScreen extends StatelessWidget {
-  TodoEditScreen({Key? key}) : super(key: key);
+  TodoEditScreen({super.key});
 
   final _controller = Get.put(TodoEditController());
 
