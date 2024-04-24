@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/ui/components/bottom_nav.dart';
-import 'package:todo_list/ui/screens/home_screen.dart';
-import 'package:todo_list/ui/screens/settings_screen.dart';
-import 'package:todo_list/ui/screens/statics_screen.dart';
+import 'package:app/ui/components/bottom_nav.dart';
+import 'package:app/ui/screens/home_screen.dart';
+import 'package:app/ui/screens/settings_screen.dart';
+import 'package:app/ui/screens/statics_screen.dart';
 
 class AppScreen extends StatefulWidget {
   const AppScreen({Key? key}) : super(key: key);

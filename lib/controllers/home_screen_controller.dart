@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:todo_list/controllers/notification_controller.dart';
-import 'package:todo_list/utils/extension_todo_with_statis.dart';
-import 'package:todo_list/utils/status.dart';
+import 'package:app/controllers/notification_controller.dart';
+import 'package:app/utils/extension_todo_with_statis.dart';
+import 'package:app/utils/status.dart';
 
 import '../database/database.dart';
 import '../utils/constants.dart';

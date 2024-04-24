@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/controllers/notification_controller.dart';
+import 'package:app/controllers/notification_controller.dart';
 
 import 'ui/routing.dart';
 import 'database/database.dart';
@@ -11,7 +11,7 @@ void main() async {
 }
 
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {

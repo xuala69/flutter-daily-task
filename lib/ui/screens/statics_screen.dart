@@ -1,8 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/controllers/statistic_screen_controller.dart';
-import 'package:todo_list/utils/priority.dart';
+import 'package:app/controllers/statistic_screen_controller.dart';
+import 'package:app/utils/priority.dart';
 
 import '../components/indicator.dart';
 

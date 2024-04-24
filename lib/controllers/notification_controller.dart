@@ -1,7 +1,7 @@
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/ui/routing.dart';
+import 'package:app/ui/routing.dart';
 
 class NotificationController {
   static const channelTaskCompleted = "task_completed";

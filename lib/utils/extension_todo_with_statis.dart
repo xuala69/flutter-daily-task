@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:todo_list/controllers/home_screen_controller.dart';
-import 'package:todo_list/database/database.dart';
-import 'package:todo_list/utils/extensions.dart';
-import 'package:todo_list/utils/status.dart';
+import 'package:app/controllers/home_screen_controller.dart';
+import 'package:app/database/database.dart';
+import 'package:app/utils/extensions.dart';
+import 'package:app/utils/status.dart';
 
 extension TodoWithStatisExtension on TodosWithStatisticResult {
   int get totalInMinutes {

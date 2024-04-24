@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/controllers/home_screen_controller.dart';
-import 'package:todo_list/database/database.dart';
-import 'package:todo_list/ui/routing.dart';
-import 'package:todo_list/utils/extension_todo_with_statis.dart';
+import 'package:app/controllers/home_screen_controller.dart';
+import 'package:app/database/database.dart';
+import 'package:app/ui/routing.dart';
+import 'package:app/utils/extension_todo_with_statis.dart';
 
 class TodoItem extends StatelessWidget {
   final TodosWithStatisticResult todoWithStatis;

@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/controllers/home_screen_controller.dart';
-import 'package:todo_list/ui/components/todo_item.dart';
-import 'package:todo_list/ui/routing.dart';
-import 'package:todo_list/utils/priority.dart';
+import 'package:app/controllers/home_screen_controller.dart';
+import 'package:app/ui/components/todo_item.dart';
+import 'package:app/ui/routing.dart';
+import 'package:app/utils/priority.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);

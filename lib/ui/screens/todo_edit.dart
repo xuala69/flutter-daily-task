@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/controllers/todo_edit_controller.dart';
-import 'package:todo_list/ui/components/priority_item.dart';
-import 'package:todo_list/utils/priority.dart';
+import 'package:app/controllers/todo_edit_controller.dart';
+import 'package:app/ui/components/priority_item.dart';
+import 'package:app/utils/priority.dart';
 
 class TodoEditScreen extends StatelessWidget {
   TodoEditScreen({Key? key}) : super(key: key);

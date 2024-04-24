@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/utils/priority.dart';
+import 'package:app/utils/priority.dart';
 
 extension IntegerExtension on int {
   Priority get value {

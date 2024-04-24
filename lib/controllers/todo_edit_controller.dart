@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/utils/constants.dart';
-import 'package:todo_list/utils/extensions.dart';
+import 'package:app/utils/constants.dart';
+import 'package:app/utils/extensions.dart';
 import '../database/database.dart';
 import '../utils/priority.dart';
 

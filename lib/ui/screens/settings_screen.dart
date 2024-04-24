@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:todo_list/ui/components/setting_item.dart';
-import 'package:todo_list/utils/constants.dart';
+import 'package:app/ui/components/setting_item.dart';
+import 'package:app/utils/constants.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({Key? key}) : super(key: key);

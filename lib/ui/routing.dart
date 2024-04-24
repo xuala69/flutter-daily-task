@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:todo_list/ui/screens/app_screen.dart';
-import 'package:todo_list/ui/screens/home_screen.dart';
-import 'package:todo_list/ui/screens/settings_screen.dart';
-import 'package:todo_list/ui/screens/statics_screen.dart';
-import 'package:todo_list/ui/screens/todo_edit.dart';
+import 'package:app/ui/screens/app_screen.dart';
+import 'package:app/ui/screens/home_screen.dart';
+import 'package:app/ui/screens/settings_screen.dart';
+import 'package:app/ui/screens/statics_screen.dart';
+import 'package:app/ui/screens/todo_edit.dart';
 
 class MRouting {
   static const app = "/";

@@ -1,8 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_list/database/database.dart';
-import 'package:todo_list/utils/priority.dart';
+import 'package:app/database/database.dart';
+import 'package:app/utils/priority.dart';
 
 class StatisticScreenController extends GetxController {
   final _database = Get.find<MDatabase>();
