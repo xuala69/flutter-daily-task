@@ -27,54 +27,65 @@ class StaticsScreen extends StatelessWidget {
             ),
           ),
           Obx(() {
-            return _controller.showCompleteRateByPriority.value
-                ? Text(
-                    'Complete rate by priority:',
-                    style: Theme.of(context).textTheme.titleMedium,
-                  )
-                : const SizedBox();
+            return Text(
+              'Total completion rate: ${_controller.completeRate}',
+              style: Get.theme.textTheme.titleMedium,
+            );
+          }),
+          const SizedBox(
+            height: 20,
+          ),
+          Obx(() {
+            if (_controller.showTotalProgressByPriority.value) {
+              return Text(
+                'Total progress by priority',
+                style: Get.theme.textTheme.titleLarge,
+              );
+            }
+            return const SizedBox();
           }),
           Obx(() {
-            return _controller.showCompleteRateByPriority.value
-                ? AspectRatio(
-                    aspectRatio: 3 / 2,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        AspectRatio(
-                          aspectRatio: 2 / 2,
-                          child: PieChart(
-                            PieChartData(
-                              pieTouchData: PieTouchData(
-                                touchCallback:
-                                    (FlTouchEvent event, pieTouchResponse) {},
-                              ),
-                              borderData: FlBorderData(
-                                show: false,
-                              ),
-                              sectionsSpace: 0,
-                              centerSpaceRadius: 40,
-                              sections: _controller.sectionData,
-                            ),
+            if (_controller.showTotalProgressByPriority.value) {
+              return AspectRatio(
+                aspectRatio: 3 / 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    AspectRatio(
+                      aspectRatio: 2 / 2,
+                      child: PieChart(
+                        PieChartData(
+                          pieTouchData: PieTouchData(
+                            touchCallback:
+                                (FlTouchEvent event, pieTouchResponse) {},
                           ),
+                          borderData: FlBorderData(
+                            show: false,
+                          ),
+                          sectionsSpace: 0,
+                          centerSpaceRadius: 40,
+                          sections: _controller.sectionData,
                         ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            ...Priority.values.map(
-                              (e) => Indicator(
-                                color: e.color,
-                                text: e.displayText,
-                                isSquare: true,
-                              ),
-                            )
-                          ],
-                        ),
+                      ),
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ...Priority.values.map(
+                          (e) => Indicator(
+                            color: e.color,
+                            text: e.displayText,
+                            isSquare: true,
+                          ),
+                        )
                       ],
                     ),
-                  )
-                : const SizedBox();
+                  ],
+                ),
+              );
+            }
+            return const SizedBox();
           }),
           const SizedBox(
             height: 12,
