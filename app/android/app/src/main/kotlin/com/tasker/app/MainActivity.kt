@@ -1,4 +1,4 @@
-package com.tasker.app
+package com.tasker.todo.app
 
 import io.flutter.embedding.android.FlutterActivity
 
